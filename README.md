@@ -31,7 +31,9 @@ mpirun -np 4 ./gol-mpi  # -np specifies the amount of processors to use
 ## Examples
 
 Running GoL on a 27x27 grid with 9 processors using a glider as start formation and coloring each processors region differently:
+
 ![Game of Life demonstration](game-of-life-demonstration.gif)
 
 Running GoL on a 32x32 grid with 4 processors using a random start formation (35th iteration):
+
 ![Game of Life demonstration](game-of-life-demonstration.png)
