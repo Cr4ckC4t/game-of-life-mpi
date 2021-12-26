@@ -4,6 +4,10 @@ A distributed-computing version of the classic "Game of Life" using the Message 
 
 The code is commented and includes additional information on how to use, compile and modify the program. The program features no command line parameters but can be configured to some extend via the `#define`s in the beginning.
 
+## Why?
+
+The concept of distributing tasks on multiple processors to maximize throughput is here simulated using [John Conway's Game of Life](https://playgameoflife.com/info) to practice the use of the MPI library in C.
+
 ## Usage
 
 The program distributes the computation of different regions in the Game of Life on the specified amount of processors.
@@ -22,5 +26,10 @@ mpicc -o gol-mpi -Wall -lm gol-mpi.c
 mpirun -np 4 ./gol-mpi  # -np specifies the amount of processors to use
 ```
 
-## Example
+## Examples
+
+Running GoL on a 27x27 grid with 9 processors using a glider as start formation and coloring each processors region differently:
 ![Game of Life demonstration](game-of-life-demonstration.gif)
+
+Running GoL on a 32x32 grid with 4 processors using a random start formation (35th iteration):
+![Game of Life demonstration](game-of-life-demonstration.png)
