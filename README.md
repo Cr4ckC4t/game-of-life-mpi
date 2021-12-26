@@ -8,7 +8,7 @@ The code is commented and includes additional information on how to use, compile
 
 The concept of distributing tasks on multiple processors to maximize throughput is here simulated using [John Conway's Game of Life](https://playgameoflife.com/info) to practice the use of the MPI library in C. The serial version of this cellular automaton is trivial so the challenge arises from distributing the grid on the processors and to let them communicate their border states with the respective neighbours. Below is a depiction of the communications that are necessary between the processors. Each square stands for a single process and its local grid. Together they form the playing field. Since each process needs to know all eight neighbour cells to compute the next state of a single cell, each process has to communicate its borders with the others. For example, processor 2 needs information from 1,4,5,0,6 and 8.
 
-[MPI layout](mpi-layout.png)
+![MPI layout](mpi-layout.png)
 
 ## Usage
 
