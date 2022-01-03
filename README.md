@@ -2,7 +2,7 @@
 
 A distributed-computing version of the classic "Game of Life" using the Message Passing Interface (MPI) on Linux. The code includes a stub for leveraging a Pi Cluster to draw the game on 8x8 Led Pi HATs.
 
-The code is commented and includes additional information on how to use, compile and modify the program. The program features no command line parameters but can be configured to some extend via the `#define`s in the beginning.
+The code is commented and includes additional information on how to use, compile and modify the program. The program features no command line parameters but can be configured to some extent via the `#define`s in the beginning.
 
 ## Why?
 
